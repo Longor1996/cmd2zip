@@ -1,0 +1,22 @@
+[package]
+name = "cmd2zip"
+version = "1.0.0"
+license = "MIT OR Apache-2.0"
+authors = ["Longor1996 <lalongok@gmail.com>"]
+description = "Runs a set of commands as child-processes, capturing their output as files into a zip archive."
+categories = ["command-line-utilities"]
+repository = "https://github.com/Longor1996/cmd2zip"
+homepage = "https://docs.rs/cmd2zip"
+readme = "README.txt"
+edition = "2021"
+
+[[bin]]
+name = "cmd2zip"
+
+[dependencies]
+clap = { version = "4.3.11", features = ["derive", "env"] }
+rayon = "1.7.0" # Used to make things go brrr.
+regex = "1.9.1" # Used to match over commands to generate file-names.
+shlex = "1.1.0" # Used to prep for command-struct construction.
+wild = "2.1.0" # Used to allow glob-expansion on windows.
+zip = "0.6.6" # Used to write/append zip archives.
