@@ -1,6 +1,6 @@
 [package]
 name = "cmd2zip"
-version = "1.0.0"
+version = "1.1.0"
 license = "MIT OR Apache-2.0"
 authors = ["Longor1996 <lalongok@gmail.com>"]
 description = "Runs a set of commands as child-processes, capturing their output as files into a zip archive."
