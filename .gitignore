@@ -2,6 +2,7 @@ target
 Cargo.lock
 bench-log
 .*.swp
+*.zip
 wiki
 tags
 examples/debug.rs
